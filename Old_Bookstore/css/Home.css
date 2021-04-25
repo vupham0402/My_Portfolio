@@ -122,3 +122,13 @@ background-image: url(../images/black.jpg);
 	transform: rotateY(30deg) skewY(-5deg);
 }
 
+
+
+@media (max-width: 1200px){
+	#leftColumn {
+		clear: left;
+	}
+	#rightColumn {
+		clear: left;
+	}
+}
