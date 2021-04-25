@@ -1,6 +1,6 @@
 @charset "utf-8";
 #page div {
-	background-image: url(../images/111018-I-Love-London-Gif.gif);
+	background-image: url("../images/London1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
