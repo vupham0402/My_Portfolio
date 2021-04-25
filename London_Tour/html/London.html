@@ -22,99 +22,9 @@
 
 <!-- Load the base stylesheet for jquery mobile -->
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-
-<style type="text/css">
-#page div {
-	background-image: url(images/111018-I-Love-London-Gif.gif);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-p {
-	font-size: larger;
-	color: #019387;
-	text-align: left;
-}
-.Slider {
-	padding-left: 50px;
-	margin-right: 10px;
-}
-.ui-field-contain fieldset legend {
-	font-size: larger;
-	margin-top: 8px;
-}
-</style>
-<script type="text/javascript">
-	var costofTour = 0;
-	var costAdult = 30;
-	var costKid = 25;
-	var numAdult = 1;
-	var numKid =1;
-	var numBreakfast = 0;
-	var numLunch = 0;
-	var numPickUp = 0;	
-	var numDropOff = 0;
-	var totalCost = 0;
-	$(document).on("pageinit", function(){
-		$('.rad').change(function(){
-			var tv = $('.rad:checked').val();			 
-			if(tv === 1){
-				costAdult = 20;
-				costKid = 15;
-			}
-			else if(tv === 2){
-				costAdult = 15;
-				costKid = 10;
-			}
-			else{
-				costAdult = 30;
-				costKid = 25;
-			}
-		});
-		$('.slider').change(function(){
-			numAdult = $('#adultSlide').val();
-			numKid = $('#kidSlide').val();
-		});
-		$('.select').change(function(){
-			numBreakfast = $('#breakfast').val();
-			numLunch = $('#lunch').val();
-			numPickUp = $('#pickup').val();
-			numDropOff = $('#dropoff').val();
-		});
-		$('#totalCost').click(function(){
-			if ($('.rad:checked').val() === 3){
-				if (numAdult === 1 && numKid === 1){
-					costofTour = 55 + 10*numBreakfast + 
-							15*numLunch + 5*numPickUp + 5*numDropOff;
-					$('#totalAmount').html('<legend>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$' + costofTour.toFixed(2)) + '</legend>';
-				}
-				else{
-					numAdult = $('#adultSlide').val();
-					numKid = $('#kidSlide').val();
-					costofTour = costAdult*numAdult + costKid*numKid + 10*numBreakfast + 
-							15*numLunch + 5*numPickUp + 5*numDropOff;
-					$('#totalAmount').html('<legend>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$' + costofTour.toFixed(2)) + '</legend>';
-				}
-			}
-			else {
-				costofTour = costAdult*numAdult + costKid*numKid + 10*numBreakfast + 
-							15*numLunch + 5*numPickUp + 5*numDropOff;
-				$('#totalAmount').html('<legend>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$' + costofTour.toFixed(2)) + '</legend>';	
-			}
-		});
-		$('#reset').click(function(){
-			$('#radioA1').prop('checked', false).checkboxradio("refresh");
-			$('#radioA2').prop('checked', false).checkboxradio("refresh");
-			$('#radioA3').prop('checked', true).checkboxradio("refresh");
-			$('#adultSlide').val(1).slider("refresh");
-			$('#kidSlide').val(1).slider("refresh");
-			$('#breakfast').val(0).selectmenu("refresh"); 
-			$('#lunch').val(0).selectmenu("refresh");
-			$('#pickup').val(0).selectmenu("refresh");
-			$('#dropoff').val(0).selectmenu("refresh");
-			$('#totalAmount').html("");
-		})
-	});
-</script>
+	
+<link href="../css/London.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/London.js"></script>
 </head>
 
 <body>
@@ -124,11 +34,11 @@ p {
 </div>
 <div class="ui-content" role="main">
 	<ul data-role="listview">
-    <li><a href="#page1"><img src="images/london.jpg" width="110px" height="110px" alt="">Why is London?</a></li>
-    <li><a href="#page2"><img src="images/transportation.jpg" width="110px" height="110px" alt="">Transportation</a></li>
-    <li><a href="#page3"><img src="images/food.jpg" width="110px" height="110px" alt="">Food</a></li>
-	<li><a href="#page4"><img src="images/sightseeing.jpg" width="110px" height="110px" alt="">Sightseeing</a></li>
-	<li><a href="#page5"><img src="images/london tour.png" width="110px" height="110px" alt="">London Tour by Bus</a></li>
+    <li><a href="#page1"><img src="../images/london.jpg" width="110px" height="110px" alt="">Why is London?</a></li>
+    <li><a href="#page2"><img src="../images/transportation.jpg" width="110px" height="110px" alt="">Transportation</a></li>
+    <li><a href="#page3"><img src="../images/food.jpg" width="110px" height="110px" alt="">Food</a></li>
+	<li><a href="#page4"><img src="../images/sightseeing.jpg" width="110px" height="110px" alt="">Sightseeing</a></li>
+	<li><a href="#page5"><img src="../images/london tour.png" width="110px" height="110px" alt="">London Tour by Bus</a></li>
     </ul>
 </div>
 <div data-role="footer">
@@ -139,10 +49,10 @@ p {
 <div data-role="page" id="page1">
 <div data-role="header">
 <a href="#page" class=" ui-btn ui-btn-left ui-icon-arrow-l ui-btn-icon-left">Home</a>
-	<h1><img src="images/tenor.gif" alt="" width="167" height="90"/></h1>
+	<h1><img src="../images/tenor.gif" alt="" width="167" height="90"/></h1>
 </div>
 <div class="ui-content">
-	<img src="images/du-lich-london3.jpg" width="371" height="247" alt=""/>
+	<img src="../images/du-lich-london3.jpg" width="371" height="247" alt=""/>
 	<p>It can be said that London is one of the most expensive cities in the world, but coming to London, tourists are hugging the whole of Europe. The standards of a luxurious, noble, peaceful and poetic Europe are centered in this capital. In London, visitors will be immersed in the old-fashioned features of ancient castles, poetic gardens, and the most famous buildings in the world.</p>
 </div>
 <div data-role="footer">
@@ -153,16 +63,16 @@ p {
 <div data-role="page" id="page2">
 <div data-role="header">
 <a href="#page" class="ui-btn ui-btn-left ui-icon-arrow-l ui-btn-icon-left">Home</a>
-	<h1><img src="images/anigif_enhanced-24036-1443701986-2.gif" width="181" height="119" alt=""/></h1>
+	<h1><img src="../images/anigif_enhanced-24036-1443701986-2.gif" width="181" height="119" alt=""/></h1>
 </div>
 <div class="ui-content">
-	<img src="images/Migliori-Bar-Londra-Metro-Notte.jpg" width="371" height="227" alt=""/>
+	<img src="../images/Migliori-Bar-Londra-Metro-Notte.jpg" width="371" height="227" alt=""/>
 	<p>London's transportation network is one of the best in Europe. The metro connects all parts of the city at reasonable prices, enabling quick travel to anywhere on the map you need.</p>
-	<img src="images/london-eye-river-cruisel_rdax_400x200.jpg" width="371" height="227" alt=""/>
+	<img src="../images/london-eye-river-cruisel_rdax_400x200.jpg" width="371" height="227" alt=""/>
 	<p>River bus is a popular means of transportation used by London City to serve tourism activities. Buses on the river make people feel excited when they can easily admire the beautiful sights in the city of London when traveling by this type. In particular, this unique vehicle is noticeable when it can run on land to take visitors around London streets or turn into a boat carrying them along the Thames.</p>
-	<img src="images/london-bus-transportation-600x397.jpg" width="371" height="227" alt=""/>
+	<img src="../images/london-bus-transportation-600x397.jpg" width="371" height="227" alt=""/>
 	<p>The red double-decker bus has long been a symbol of London. The outstanding advantage of the 2-stage bus is the unique design, the improvement in structure and technology makes it lighter and more convenient than the previous cars. The bright red color made the Routemaster one of London's special and glorified worldwide.</p>
-	<img src="images/84694-640x360-oyster-2015-640.jpg" width="371" height="227" alt=""/>
+	<img src="../images/84694-640x360-oyster-2015-640.jpg" width="371" height="227" alt=""/>
 	<p>London is famous as a place with expensive living and travel costs. But one thing is not impossible to admit, that public transport in the capital of England, though expensive but very convenient thanks to the electronic ticket named Oyster card. You can easily buy and recharge this card at most London subway stations, or you can subscribe to it online and Oyster card will be sent to your home. You can use this card to travel on all public transport in London including buses, trams, subways, surface ships, riverboats and most inner city national rail systems.</p>
 </div>
 <div data-role="footer">
@@ -173,22 +83,22 @@ p {
 <div data-role="page" id="page3">
 <div data-role="header">
 <a href="#page" class="ui-btn ui-btn-left ui-icon-arrow-l ui-btn-icon-left">Home</a>
-	<h1><img src="images/food-animated-gif-127704-2917685.gif" width="160" height="90" alt=""/></h1>
+	<h1><img src="../images/food-animated-gif-127704-2917685.gif" width="160" height="90" alt=""/></h1>
 </div>
 <div class="ui-content" role="main">
-	<img src="images/Britishfoodcollage.jpg.jpg" width="371" height="227" alt=""/>
+	<img src="../images/Britishfoodcollage.jpg.jpg" width="371" height="227" alt=""/>
 	<p>London is truly an international city and if you are looking for good food, London will not disappoint you. The capital of England has a wealth of dishes to choose from and the price is right for everyone: from the streets and pebble valleys of Chinese Street, the Italian restaurant in Soho to the South American nightclubs in Islington and rows of traditional English pubs.</p>
 	<h2>English breakfast</h2>
-	<img src="images/What-to-Eat-in-London-Famous-British-Food1.jpg" width="371" height="227" alt=""/>
+	<img src="../images/What-to-Eat-in-London-Famous-British-Food1.jpg" width="371" height="227" alt=""/>
 	<p>It is a hearty breakfast consisting of eggs, bacon, sausages, baked beans, mushrooms, black pudding, and fried bread. The black pudding is made from dried pig blood and fat.</p>
 	<h2>Roast Beef</h2>
-	<img src="images/What-to-Eat-in-London-Famous-British-Food4.jpg" width="371" height="227" alt=""/>
+	<img src="../images/What-to-Eat-in-London-Famous-British-Food4.jpg" width="371" height="227" alt=""/>
 	<p>The roast beef is part of the traditional Sunday lunch. It consists of roasted meat served with vegetables such as carrots and Brussels sprouts.</p>
 	<h2>Bread-and-Butter pudding</h2>
-	<img src="images/What-to-Eat-in-London-Famous-British-Food8.jpg" width="371" height="227" alt=""/>
+	<img src="../images/What-to-Eat-in-London-Famous-British-Food8.jpg" width="371" height="227" alt=""/>
 	<p>This is a desert made with layers of bread and dried currants which are baked in cream. It can be quite addictive.</p>
 	<h2>Cream Tea</h2>
-	<img src="images/What-to-Eat-in-London-Famous-British-Food9.jpg" width="371" height="227" alt=""/>
+	<img src="../images/What-to-Eat-in-London-Famous-British-Food9.jpg" width="371" height="227" alt=""/>
 	<p>In London, cream tea is what you want to have. Along with a properly brewed cup of tea, you also get scones served with jam and clotted cream or sandwiches made with slices of cucumber.</p>
 </div>
 <div data-role="footer">
@@ -199,26 +109,26 @@ p {
 <div data-role="page" id="page4">
 <div data-role="header">
 <a href="#page" class="ui-btn ui-btn-left ui-icon-arrow-l ui-btn-icon-left">Home</a>
-	<h1><img src="images/giphy.gif" width="180" height="90" alt=""/></h1>
+	<h1><img src="../images/giphy.gif" width="180" height="90" alt=""/></h1>
 </div>
 <div class="ui-content" role="main">
-	<img src="images/about-wide.jpg" width="371" height="227" alt=""/>
+	<img src="../images/about-wide.jpg" width="371" height="227" alt=""/>
 	<p>There is nothing more interesting than visiting famous and fascinating landmarks introduced both in film and television in London. Many of these places can be admired in one day and their magnificence and scale simply impress. Guests can choose to walk between these landmarks to admire the many interesting attractions along either side of the road or take the subway or tourist bus routes to keep pace with the general feeling of the city.</p>
 	<h2>Big Ben</h2>
-	<img src="images/dong-ho-Big-Ben-London.jpg" width="371" height="727" alt=""/>
+	<img src="../images/dong-ho-Big-Ben-London.jpg" width="371" height="727" alt=""/>
 	<p>Big Ben clock is located in the tower of Elizabeth at the northern end of Parliament House in Westminster, central London, next to the River Thames. This is one of the most famous symbols in London. Technically, Big Ben is the name given to the large bell inside the clock tower, weighing more than 13 tons. At night, the four clock tower lights were impressive. After a light hammer is inserted and the bell is installed, the clock bell becomes very interesting when listening to the clock bell when traveling in the UK.</p>
 	<h2>River Thames</h2>
-	<img src="images/song-thames.png" width="371" height="227" alt=""/>
+	<img src="../images/song-thames.png" width="371" height="227" alt=""/>
 	<p>If you have arrived in England, you can not stop by once the poetic Thames River flows through the famous British capital and poetic landscapes are waiting for you to discover and experience beauty.</p>
 	<p>The Thames is branched by four river branches, Isis, Churn, Colne and Leach. The tributaries converge in the city of Oxford. The flow of the river in the direction of East London, opening some wide estuaries into the North Sea. Under the river, there is a world full of life. There are a large number of fish, invertebrate animals as well as the top predatory predators living below this river.
 	<h2>Buckingham Palace</h2>
-	<img src="images/kham-pha-cung-dien-buckingham-08.jpg" width="371" height="227" alt=""/>
+	<img src="../images/kham-pha-cung-dien-buckingham-08.jpg" width="371" height="227" alt=""/>
 	<p>The palace was built in 1701 and is surrounded by three parks, including the famous Hyde Park. It was built to serve special events of the country and for the Royal Family. It is also a major tourist destination in London, attracting many tourists. In the spring, the whole palace is full of yellow daffodils, a flower typical of the British countryside. When going from the palace door to the central lake, visitors can see a lot of wildflowers, there are all 350 types and lives of most animals, especially birds. The central lake is the most beautiful and quiet place of Buckingham Palace.</p>
 	<h2>The Sherlock Holmes Museum</h2>
-	<img src="images/Holmes.jpg" width="371" height="227" alt=""/>
+	<img src="../images/Holmes.jpg" width="371" height="227" alt=""/>
 	<p>Sherlock Holmes Museum is a private museum, opened with the aim of commemorating the legendary detective in the 19th century. Although it bears the name of the house number 221B, the house is actually between two houses 237 and 241 on Barker St, London, England. This is also the museum for the first fictional character in the world. Visit the museum, visitors will see firsthand the items that the famous detective once used, his residence with the landlady Hudson and close friend - Dr. Watson.</p>
 	<h2>Abbey Road</h2>
-	<img src="images/abbey-road_1jpg.jpg" width="371" height="227" alt=""/>
+	<img src="../images/abbey-road_1jpg.jpg" width="371" height="227" alt=""/>
 	<p>Although there is no big star or music star, every year thousands of people still gather before the Abbey in London (UK), which is the headquarters of Abbey Records. They cross the street, sing and hug each other to celebrate the fabulous day The Beatles released immortal albums, Abbey road. People come here every year to recollect and submerged under the Beatles music.</p>
 </p>
 </div>
@@ -229,10 +139,10 @@ p {
 <div data-role="page" id="page5">
 <div data-role="header">
 <a href="#page" class=" ui-btn ui-btn-left ui-icon-arrow-l ui-btn-icon-left">Home</a>
-	<h1><img src="images/giphy (1).gif" alt="" width="167" height="90"/></h1>
+	<h1><img src="../images/giphy (1).gif" alt="" width="167" height="90"/></h1>
 </div>
 <div class="ui-content">
-	<img src="images/tenor (1).gif" width="371" height="247" alt=""/>
+	<img src="../images/tenor (1).gif" width="371" height="247" alt=""/>
 	<p>To create a great experience for travelers and showcase the many rich and elegant tourist destinations of London, we want to organize around London tours which would be attractive to travelers. Come with us to enjoy a tour with many new experiences about London!</p>
 	<div class="ui-field-contain">
 		<form data-role="controlgroup" data-type="vertical">
