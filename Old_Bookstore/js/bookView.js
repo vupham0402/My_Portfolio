@@ -19,7 +19,7 @@ $(document).ready(function(){
 				$(this).find("ID").text()+
 				'><p><a href="#"><img src="../images/'+
 				$(this).find("Pic").text()+
-				'" width="40%" height="40%" alt="Error!"></a></p>'+
+				'" width="50%" height="50%" alt="Error!"></a></p>'+
 				'<p>'+
 					$(this).find("Name").text()+
 				'</p>'+
@@ -43,7 +43,7 @@ $(document).ready(function(){
 						$(this).find("ID").text()+
 						'><p><a href="#"><img src="../images/'+
 						$(this).find("Pic").text()+
-						'" width="40%" height="40%" alt="Error!"></a></p>'+
+						'" width="50%" height="50%" alt="Error!"></a></p>'+
 						'<p>'+
 							$(this).find("Name").text()+
 						'</p>'+
@@ -64,7 +64,7 @@ $(document).ready(function(){
 							$(this).find("ID").text()+
 							'><p><a href="#"><img src="../images/'+
 							$(this).find("Pic").text()+
-							'" width="40%" height="40%" alt="Error!"></a></p>'+
+							'" width="50%" height="50%" alt="Error!"></a></p>'+
 							'<p>'+
 								$(this).find("Name").text()+
 							'</p>'+
@@ -86,7 +86,7 @@ $(document).ready(function(){
 							$(this).find("ID").text()+
 							'><p><a href="#"><img src="../images/'+
 							$(this).find("Pic").text()+
-							'" width="40%" height="40%" alt="Error!"></a></p>'+
+							'" width="50%" height="50%" alt="Error!"></a></p>'+
 							'<p>'+
 								$(this).find("Name").text()+
 							'</p>'+
@@ -108,7 +108,7 @@ $(document).ready(function(){
 							$(this).find("ID").text()+
 							'><p><a href="#"><img src="../images/'+
 							$(this).find("Pic").text()+
-							'" width="40%" height="40%" alt="Error!"></a></p>'+
+							'" width="50%" height="50%" alt="Error!"></a></p>'+
 							'<p>'+
 								$(this).find("Name").text()+
 							'</p>'+
