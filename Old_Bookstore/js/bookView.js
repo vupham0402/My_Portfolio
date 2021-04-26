@@ -15,7 +15,7 @@ $(document).ready(function(){
 			$("#bookView").empty();
 			
 			$(xml).find('book').each(function(){
-				var info= '<li data-id='+
+				var info= '<li class="list" data-id='+
 				$(this).find("ID").text()+
 				'><p><a href="#"><img src="../images/'+
 				$(this).find("Pic").text()+
@@ -28,12 +28,13 @@ $(document).ready(function(){
 				'</p>'+
 				'<p>'+
 					$(this).find("Price").text()+
-				'</p>'+
+				'</p>'+ 
 				'<p style="color:red;">'+
 					$(this).find("Sale").text()+
-				'</p></li></br>';
+				'</p></li>';
 				$("#bookView").append(info);
 			});
+			$("#bookView").append('<div class="clearit"></div>');
 			$("#option").change(function(){
 				$("#bookView").empty();
 				$(xml).find('book').each(function(){
