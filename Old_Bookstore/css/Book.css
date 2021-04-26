@@ -81,3 +81,10 @@ button {
 .clearit {
 	clear: left;
 }
+@media (max-width: 1200px){
+	.list {
+		width: 100%;
+		clear: left;
+		list-style: none;
+	}
+}
