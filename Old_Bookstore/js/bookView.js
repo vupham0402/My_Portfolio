@@ -39,7 +39,7 @@ $(document).ready(function(){
 				$("#bookView").empty();
 				$(xml).find('book').each(function(){
 					if($("#option").val() === "0"){
-						var info1= '<li data-id='+
+						var info1= '<li class="list" data-id='+
 						$(this).find("ID").text()+
 						'><p><a href="#"><img src="../images/'+
 						$(this).find("Pic").text()+
@@ -60,7 +60,7 @@ $(document).ready(function(){
 					}
 					else if($("#option").val() === "1"){
 						if($(this).find("Group").text() === "1"){
-							var info2= '<li data-id='+
+							var info2= '<li class="list" data-id='+
 							$(this).find("ID").text()+
 							'><p><a href="#"><img src="../images/'+
 							$(this).find("Pic").text()+
@@ -82,7 +82,7 @@ $(document).ready(function(){
 					}
 					else if($("#option").val() === "2"){
 						if($(this).find("Group").text() === "2"){
-							var info3= '<li data-id='+
+							var info3= '<li class="list" data-id='+
 							$(this).find("ID").text()+
 							'><p><a href="#"><img src="../images/'+
 							$(this).find("Pic").text()+
@@ -104,7 +104,7 @@ $(document).ready(function(){
 					}
 					else if($("#option").val() === "3"){
 						if($(this).find("Group").text() === "3"){
-							var info4= '<li data-id='+
+							var info4= '<li class="list" data-id='+
 							$(this).find("ID").text()+
 							'><p><a href="#"><img src="../images/'+
 							$(this).find("Pic").text()+
@@ -126,6 +126,7 @@ $(document).ready(function(){
 					}
 				});
 			});
+			$("#bookView").append('<div class="clearit"></div>');
 		}
 	});
 	$("#bookView").on("click","li",function(){
