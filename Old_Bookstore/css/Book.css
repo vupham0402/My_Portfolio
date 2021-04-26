@@ -73,3 +73,11 @@ button {
 	cursor: pointer;
 	border-radius: 15px;
 }
+.list {
+	width: 33.33%;
+	float: left;
+	list-style: none;
+}
+.clearit {
+	clear: left;
+}
