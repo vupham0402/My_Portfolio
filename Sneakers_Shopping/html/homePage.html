@@ -1,0 +1,475 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home Page</title>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="../css/homePage.css" rel="stylesheet" type="text/css">
+<link href="../css/page1.css" rel="stylesheet" type="text/css">
+<link href="../css/page2.css" rel="stylesheet" type="text/css">
+<link href="../css/page3.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://js.arcgis.com/3.28/esri/css/esri.css">
+<meta name="viewport" content="device-width, initial-scale=1">
+
+<!-- Load the base jquery code from the jquery Content Distribution Network (CDN) -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+<!-- Load the codes necessary to migrate from an earlier version (optional) -->
+<script
+  src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"
+  integrity="sha256-F0O1TmEa4I8N24nY0bya59eP6svWcshqX1uzwaWC4F4="
+  crossorigin="anonymous">
+</script>
+
+<!-- Load the code for the mobile extensions -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<!-- Load the base stylesheet for jquery mobile -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+<script src="../js/toggleMenu.js"></script>
+<script src="../js/function.js"></script>
+<script src="https://js.arcgis.com/3.28/"></script>
+<script src="../js/map.js"></script>
+</head>
+
+<body>
+<div data-role="page" id="page">
+<div data-role="header" class="header">
+		<div class="logo">Cop Garden</div>
+		<nav>
+			<ul>
+				<li><a href="#page" class="active">Home</a></li>
+				<li><a href="#page2">Contact Us</a></li>
+				<li><div class="cart-toggle"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></div></li>
+				<li><div id="totalInventory1">0</div></li>
+			</ul>
+		</nav>
+		<div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+		<div class="minicart-toggle"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+		<div id="miniTotalInventory1">0</div>
+		<div class="clearIt"></div>
+</div>
+<div class="ui-content" role="main">
+	<div id="inventoryList" data-role="listview" data-filter="true"></div>
+</div>
+<div data-role="footer" id="footer">
+	<h4>POWERED BY SQUARESPACE</h4>
+</div>
+</div>
+
+<div data-role="page" id="page1">
+  <div data-role="header" class="header">
+		<div class="logo">Cop Garden</div>
+		<nav>
+			<ul>
+				<li><a href="#page" class="active">Home</a></li>
+				<li><a href="#page2">Contact Us</a></li>
+				<li><div class="cart-toggle"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></div></li>
+				<li><div id="totalInventory2">0</div></li>
+			</ul>
+		</nav>
+		<div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+		<div class="minicart-toggle"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+	  	<div id="miniTotalInventory2">0</div>
+		<div class="clearIt"></div>
+</div>
+<div class="ui-content">
+	<div class="container">
+		<div id="thePic">Pic</div>
+		<div class="details">
+			<div class="content">
+				<h2><div id="theName">Name</div></h2>
+				<br>
+				<div id="theBrand">Brand</div>
+				<p><div id="theDetail"></div></p>
+				<a href="#" id="show">Read More</a>
+				<h3><div id="theSize">Size</div></h3>
+				<h3><div id="thePrice">Price</div></h3>
+				<button id="addToCart">Add To Cart</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div data-role="footer" data-position="fixed">
+    <h4><span id="footerText"> </span></h4>
+</div>
+</div>
+<div data-role="page" id="page2">
+<div data-role="header" class="header">
+	<div class="logo">Cop Garden</div>
+	<nav>
+		<ul>
+			<li><a href="#page" class="active">Home</a></li>
+			<li><a href="#page2">Contact Us</a></li>
+			<li><div class="cart-toggle"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></div></li>
+			<li><div id="totalInventory3">0</div></li>
+		</ul>
+	</nav>
+	<div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+	<div class="minicart-toggle"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+	<div id="miniTotalInventory3">0</div>
+	<div class="clearIt"></div>
+</div>
+<div class="ui-content">
+	<div id="map"></div>
+	<div class="container">
+		<div class="box">
+			<div class="icon">
+				<i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+				<h4>Address</h4>
+				<h3>307 13th Ave, Ellensburg, WA 98926</h3>
+			</div>
+		</div>
+		<div class="box">
+			<div class="icon">
+				<i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
+				<h4>Mobile</h4>
+				<h3>2532529284</h3>
+			</div>
+		</div>
+		<div class="box">
+			<div class="icon">
+				<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+				<h4>Email</h4>
+				<h3>vupham0402@gmail.com</h3>
+			</div>
+		</div>
+	</div>
+</div>
+<div data-role="footer">
+<h4>Cop Garden</h4>
+</div>
+</div>
+<div data-role="page" id="page3">
+<div data-role="header" class="header">
+	<div class="logo">Cop Garden</div>
+	<nav>
+		<ul>
+			<li><a href="#page" class="active">Home</a></li>
+			<li><a href="#page2">Contact Us</a></li>
+			<li><div class="cart-toggle"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></div></li>
+			<li><div id="totalInventory4">0</div></li>
+		</ul>
+	</nav>
+	<div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+	<div class="minicart-toggle"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+	<div id="miniTotalInventory4">0</div>
+	<div class="clearIt"></div>
+</div>
+<div class="ui-content">
+  <div class="col-75">
+    <div class="container">
+      <form class="contactform" name="contact" method="post" action="#">
+		<div class="title"><h3>Shipping Address</h3></div>
+		  <p class="note"><span class="req">*</span> Asterisk fields are required</p>
+		  <div class="row">
+			<label for="name">First Name <span class="req">*</span></label>
+			<input type="text" id="Bfname1" tabindex="1" placeholder="Steve" required="required">
+		  </div>
+		   <div class="row">
+			<label for="name">Last Name <span class="req">*</span></label>
+			<input type="text" id="Blname1" tabindex="1" placeholder="Jobs" required="required">
+		  </div>
+
+			<div class="row">
+				<label for="phone">Phone Number <span class="req">*</span></label>
+				<input type="number" id="Bphone1" tabindex="6" placeholder="253XXXXXXX" required="required">
+		  	</div>
+		  <div class="row">
+			<label for="email">E-mail Address <span class="req">*</span></label>
+			<input type="email" id="Bemail1" tabindex="2" placeholder="address@domain.com" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+		  </div>
+		  
+		   <div class="row">
+			<label for="address">Address <span class="req">*</span></label>
+			<input type="text" id="Baddress1" tabindex="1" placeholder="300 S King St..." required="required">
+		  </div>
+			
+		  <div class="row">
+			<label for="state">State</label>
+                <div class="state1">
+				  <select id="Bstate1">
+					<option value="WA">WA</option>
+					<option value="GA">GA</option>
+					<option value="NY">NY</option>
+					<option value="LA">LA</option>
+				  </select>
+			  </div>
+		  </div>
+		   <div class="row">
+                <label for="zip">Zip</label>
+                <input type="number" id="Bzip1" placeholder="98926" required="required">
+              </div>
+			<label>
+          <input type="checkbox" id="sameadr1"> Shipping address same as billing address
+        </label>
+		 <div class="col-50">
+		 <div class="title"><h3>Billing Address</h3></div>
+		  <p class="note"><span class="req">*</span> Asterisk fields are required</p>
+		  <div class="row">
+			<label for="name">First Name <span class="req">*</span></label>
+			<input type="text" id="Sfname1" tabindex="1" placeholder="Steve" required="required">
+		  </div>
+		   <div class="row">
+			<label for="name">Last Name <span class="req">*</span></label>
+			<input type="text" id="Slname1" tabindex="1" placeholder="Jobs" required="required">
+		  </div>
+
+			<div class="row">
+				<label for="phone">Phone Number <span class="req">*</span></label>
+				<input type="number" id="Sphone1" tabindex="6" placeholder="253XXXXXXX" required="required">
+		  	</div>
+			
+		  <div class="row">
+			<label for="email">E-mail Address <span class="req">*</span></label>
+			<input type="email" id="Semail1" tabindex="2" placeholder="address@domain.com" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+		  </div>
+			 
+		  <div class="row">
+			<label for="address">Address <span class="req">*</span></label>
+			<input type="text" id="Saddress1" tabindex="1" placeholder="300 S King St..." required="required">
+		  </div>
+			
+		  <div class="row">
+			<label for="state">State</label>
+                <div class="state1">
+				  <select id="Sstate1">
+					<option value="WA">WA</option>
+					<option value="GA">GA</option>
+					<option value="NY">NY</option>
+					<option value="LA">LA</option>
+				  </select>
+			  </div>
+		  </div>
+		   <div class="row">
+                <label for="zip">Zip</label>
+                <input type="number" id="Szip1" placeholder="98926" required="required">
+              </div>
+			</div>
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Visa/Master Cards</label>
+			<p class="note"><span class="req">*</span> Asterisk fields are required</p>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card <span class="req">*</span></label>
+            <input type="text" id="cname1" name="cardname" placeholder="John More Doe" required="required">
+            <label for="ccnum">Credit card number <span class="req">*</span></label>
+            <input type="number" id="ccnum1" name="cardnumber" placeholder="1111222233334444" required="required">
+            <label for="expmonth">Exp Month <span class="req">*</span></label>
+            <input type="number" id="expmonth1" name="expmonth" placeholder="10" required="required">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year <span class="req">*</span></label>
+                <input type="number" id="expyear1" name="expyear" placeholder="2018" required="required">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV <span class="req">*</span></label>
+                <input type="number" id="cvv1" name="cvv" placeholder="352" required="required">
+              </div>
+            </div>
+			</div>
+         <div class="center">
+			<input type="button" id="submitbtn1" name="submitbtn1" tabindex="5" value="Go To Payment">
+		  </div>
+      </form>
+	</div>
+    </div>
+  </div>
+</div>
+<div data-role="page" id="page4">
+<div data-role="header" class="header">
+	<div class="logo">Cop Garden</div>
+	<nav>
+		<ul>
+			<li><a href="#page" class="active">Home</a></li>
+			<li><a href="#page2">Contact Us</a></li>
+			<li><div class="cart-toggle"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></div></li>
+				<li><div id="totalInventory5">0</div></li>
+		</ul>
+	</nav>
+	<div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+	<div class="minicart-toggle"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+	<div id="miniTotalInventory5">0</div>
+	<div class="clearIt"></div>
+</div>
+<div class="ui-content">
+  <div class="col-75">
+    <div class="container">
+      <form class="contactform" name="contact" method="post" action="#">
+		<div class="title"><h3>Shipping Address</h3></div>
+		  <p class="note"><span class="req">*</span> Asterisk fields are required</p>
+		  <div class="row">
+			<label for="name">First Name <span class="req">*</span></label>
+			<input type="text" id="Bfname2" tabindex="1" placeholder="Steve" required readonly="true">
+		  </div>
+		   <div class="row">
+			<label for="name">Last Name <span class="req">*</span></label>
+			<input type="text" id="Blname2" tabindex="1" placeholder="Jobs" required readonly="true">
+		  </div>
+
+			<div class="row">
+				<label for="phone">Phone Number <span class="req">*</span></label>
+				<input type="number" id="Bphone2" tabindex="6" placeholder="253XXXXXXX" required readonly="true">
+		  	</div>
+			
+		  <div class="row">
+			<label for="email">E-mail Address <span class="req">*</span></label>
+			<input type="email" id="Bemail2" tabindex="2" placeholder="address@domain.com" required readonly="true">
+		  </div>
+		  
+		   <div class="row">
+			<label for="address">Address <span class="req">*</span></label>
+			<input type="text" id="Baddress2" tabindex="1" placeholder="300 S King St..." required readonly="true">
+		  </div>
+			
+		  <div class="row">
+			<label for="state">State</label>
+                <div class="state2">
+				  <select id="Bstate2" readonly="true">
+					<option value="WA">WA</option>
+					<option value="GA">GA</option>
+					<option value="NY">NY</option>
+					<option value="LA">LA</option>
+				  </select>
+			  </div>
+		  </div>
+		   <div class="row">
+                <label for="zip">Zip</label>
+                <input type="number" id="Bzip2" placeholder="98926" readonly="true">
+              </div>
+		 <div class="col-50">
+		 <div class="title"><h3>Billing Address</h3></div>
+		  <p class="note"><span class="req">*</span> Asterisk fields are required</p>
+		  <div class="row">
+			<label for="name">First Name <span class="req">*</span></label>
+			<input type="text" id="Sfname2" tabindex="1" placeholder="Steve" required readonly="true">
+		  </div>
+		   <div class="row">
+			<label for="name">Last Name <span class="req">*</span></label>
+			<input type="text" id="Slname2" tabindex="1" placeholder="Jobs" required readonly="true">
+		  </div>
+
+			<div class="row">
+				<label for="phone">Phone Number <span class="req">*</span></label>
+				<input type="number" id="Sphone2" tabindex="6" placeholder="253XXXXXXX" required readonly="true">
+		  	</div>
+			
+		  <div class="row">
+			<label for="email">E-mail Address <span class="req">*</span></label>
+			<input type="email" id="Semail2" tabindex="2" placeholder="address@domain.com" required readonly="true">
+		  </div>
+			 
+		  <div class="row">
+			<label for="address">Address <span class="req">*</span></label>
+			<input type="text" id="Saddress2" tabindex="1" placeholder="300 S King St..." required readonly="true">
+		  </div>
+			
+		  <div class="row">
+			<label for="state">State</label>
+                <div class="state2">
+				  <select id="Sstate2" readonly="true">
+					<option value="WA">WA</option>
+					<option value="GA">GA</option>
+					<option value="NY">NY</option>
+					<option value="LA">LA</option>
+				  </select>
+			  </div>
+		  </div>
+		   <div class="row">
+                <label for="zip">Zip</label>
+                <input type="number" id="Szip2" placeholder="98926" readonly="true">
+              </div>
+			</div>
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Visa/Master Cards</label>
+			<p class="note"><span class="req">*</span> Asterisk fields are required</p>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card <span class="req">*</span></label>
+            <input type="text" id="cname2" name="cardname" placeholder="John More Doe" required readonly="true">
+            <label for="ccnum">Credit card number <span class="req">*</span></label>
+            <input type="number" id="ccnum2" name="cardnumber" placeholder="1111222233334444" required readonly="true">
+            <label for="expmonth">Exp Month <span class="req">*</span></label>
+            <input type="number" id="expmonth2" name="expmonth" placeholder="10" required readonly="true">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year <span class="req">*</span></label>
+                <input type="number" id="expyear2" name="expyear" placeholder="2018" required readonly="true">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV <span class="req">*</span></label>
+                <input type="number" id="cvv2" name="cvv" placeholder="352" required readonly="true">
+              </div>
+            </div>
+			</div>
+		   <div class="row">
+			    <div id="Price"></div>
+			    <div id="Tax"></div>
+			    <div id="Shipping"></div>
+			    <div id="Cost"></div>
+		  </div>
+         <div class="center">
+			<a href="#page3"><input type="button" id="submitbtn2" name="submitbtn2" tabindex="5" value="Edit Information"></a>
+			 <a href="#page5"><input type="submit" id="submitbtn3" name="submitbtn3" tabindex="5" value="Pay"></a>
+		  </div>
+      </form>
+	</div>
+    </div>
+  </div>
+</div>
+<div data-role="page" id="page5">
+<div data-role="header" class="header">
+		<div class="logo">Cop Garden</div>
+		<nav>
+			<ul>
+				<li><a href="#page" class="active">Home</a></li>
+				<li><a href="#page2">Contact Us</a></li>
+				<li><div class="cart-toggle"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></div></li>
+			</ul>
+		</nav>
+		<div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+		<div class="minicart-toggle"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+		<div class="clearIt"></div>
+</div>
+<div class="ui-content" role="main">
+	<p>Your order is processing....</p>
+</div>
+<div data-role="footer">
+	<h4>POWERED BY SQUARESPACE</h4>
+</div>
+</div>
+
+	<div id="modal-wrapper">
+		<div class="modalbox">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h1>Your Cart</h1>
+				</div>
+				<div id="modal-content-body">
+					<p>Your cart is empty!</p>
+				</div>
+				<br><br><a href="#" id="remove">Remove</a><br><br>
+				<a href="#page" id="continue">Continue Shopping</a><br><br>
+				<a href="#page3" id="checkout">Checkout</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

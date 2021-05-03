@@ -1,0 +1,118 @@
+@charset "utf-8";
+#page1 {
+	background-image: url(../images/sneaker.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#page1 .ui-content .container{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 900px;
+	height: 600px;
+	background-color: #006dbc;
+	background-image: url(url);
+}
+.ui-content .container #thePic{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	background: #fff;
+}
+.container #thePic img{
+	position: relative;
+	width: 400px;
+}
+.ui-content .container .details{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 40px;
+	color: #FFFFFF;
+}
+.details .content h2{
+	margin: 0;
+	padding: 0;
+	font-size: 2.5em;
+	line-height: 0.8em;
+	color: #D5D5D5;
+}
+.details .content p{
+	max-width: 85%;
+	margin-left: 15%;
+	font-size: 15px;
+}
+.details .content h3{
+	margin: 0;
+	padding: 0;
+	font-size: 2.5em;
+	color: #E7E7E7;
+}
+.details .content button{
+	background:#1ABBAE;
+	color: #fff;
+	border: none;
+	box-shadow: none;
+	outline: none;
+	padding: 15px 20px;
+	margin-top: 5px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 600;
+	border-radius: 40px;
+	cursor: pointer;
+}
+.details .content #theBrand{
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #D0D0D0;
+}
+.details .content a{
+	display: inline-block;
+	margin-top: 10px;
+	padding: 10px 20px;
+	border: 1px solid #fff;
+	text-decoration: none;
+	color: #fff;
+	transition: 0.5s;
+}
+.details .content a:hover{
+	color: #000;
+	background: #fff;
+}
+@media (max-width: 991px){
+	#page1 .ui-content .container{
+		height: auto;
+		width: 350px;
+	}
+	.ui-content .container #thePic{
+		padding: 40px;
+		box-sizing: border-box;
+		width: 100% !important;
+		height: auto;
+		text-align: center;
+		overflow: hidden;
+	}
+	.container #thePic img{
+		left: initial;
+		width: 300px;
+	}
+	.ui-content .container .details{
+		width: 100% !important;
+		height: auto;
+		padding: 20px;
+	}
+	.details .content p{
+		max-width: 100%;
+		margin-left: 0;
+	}
+} 
