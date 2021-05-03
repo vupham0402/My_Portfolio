@@ -572,16 +572,13 @@ ul li a.active.ui-link{
 		display: block;
 	}
 	.list {
-		width: 100%;
+		width: 100% !important;
 		clear: left;
-		list-style: none;
+		list-style: none !important;
 	}
 	.header .logo {
 		line-height: 50px !important;
 		font-size: 45px !important;
-	}
-	.thumbContainer img {
-		width: 120px;
 	}
 }
 .list {
