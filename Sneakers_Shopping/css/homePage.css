@@ -477,7 +477,7 @@ ul li a.active.ui-link{
 	transform-origin: left;
 	z-index: -1;
 }
-@media (max-width: 991px){
+@media (max-width: 1000px){
 	#page .header{
 		padding: 0 20px;
 	}
@@ -565,16 +565,23 @@ ul li a.active.ui-link{
 	#miniTotalInventory4{
 		display: block;
 	}
-	/*#totalInventory5{
+	#totalInventory5{
 		display: none;
 	}
 	#miniTotalInventory5{
 		display: block;
-	}*/
+	}
 	.list {
 		width: 100%;
 		clear: left;
 		list-style: none;
+	}
+	.header .logo {
+		line-height: 50px !important;
+		font-size: 45px !important;
+	}
+	.thumbContainer img {
+		width: 120px;
 	}
 }
 .list {
