@@ -42,6 +42,16 @@
         + Display all icons of social media vertically with the width of screen > 1024 px
         + Display all icons of social media horizontally with the width of screen < 1024 px
 
+## Photo Demo
+    - https://www.flickr.com/photos/192965310@N06/51164017217/in/datetaken-public/
+    - https://www.flickr.com/photos/192965310@N06/51164017217/in/datetaken-public/
+  
+## Video Demo
+    - https://vimeo.com/546775198
+
+## Website Demo
+    - https://www.cwu.edu/gearup/
+
  
 
 
