@@ -4,7 +4,7 @@
     - User can add/edit/delete the link for the social media they want
 
 ## What module do:
-    - Create the list of social media icons based on the user's request and show it on website
+    - Create the list of social media icons based on the user's request and show it on drupal website
     - Saved all social media links in database
 
 ## Preparing for module:
