@@ -1,4 +1,4 @@
-# Social media module
+# Social Media Module For Drupal Website
 
 ## What user do:
     - User can add/edit/delete the link for the social media they want
