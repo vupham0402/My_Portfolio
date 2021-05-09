@@ -1,7 +1,7 @@
 # Social Media Module For Drupal Website
 
 ## What user do:
-    - User can add/edit/delete the link for the social media they want
+    - Users can add/edit/delete the link for the social media they want
 
 ## What module do:
     - Create the list of social media icons based on the user's request and show it on drupal website
@@ -31,10 +31,10 @@
         + url column: link of social media
 
 ## Acceptance Criteria
-    - User
-        + User can access the socia media admin screen
-        + User can add/edit/delete the url of social media
-        + User can save configuration
+    - Users
+        + Users can access the socia media admin screen
+        + Users can add/edit/delete the url of social media
+        + Users can save configuration
     - Module 
         + Only accept well-form urls
         + Show all the icons of social media user requested
