@@ -17,4 +17,4 @@
   - Notifying users to know which product is low stock
 
 ## Website demo:
-https://vupham0402.github.io/Web-Portfolio/Store_Management/html/Mobile_Store.html
+https://vupham0402.github.io/My_Portfolio/Store_Management/html/Mobile_Store.html
