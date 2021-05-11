@@ -12,4 +12,4 @@
   - Website shows the method to users can contact the bookstore
 
 ## Website demo:
-  - https://vupham0402.github.io/My_Portfolio/Old_Bookstore/html/Home.html
+  - https://vupham0402.github.io/My_Portfolio/Web_Projects/Old_Bookstore/html/Home.html
