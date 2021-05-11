@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<link href="../css/Home.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="slider()">
+<div id="container">
+	<div id="title"><img src="../images/Title1.png" width="100%" height="100%" alt=""/></div>
+ 	<div id="nav"><a href="Home.html">Home</a> <a href="About.html">About</a> <a href="Book.html">Books</a> <a href="Contact.html">Contact Us</a>
+    	<div class="clearIt"></div>
+	</div>
+    <div id="columnWrapper">
+		<div id="leftColumn">
+			<div class="box">
+				<div class="text">
+					<div>
+						<h1>Quote of the Day</h1>
+						<p>"Books are everywhere; and always the same sense of adventure fills us. Second-hand books are wild books, homeless books; they have come together in vast flocks of variegated feather, and have a charm which the domesticated volumes of the library lack."</p> 
+						<p>Virginia Woolf in Street Haunting</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="rightColumn">
+			<div id="slider">
+				<p>
+					<a href="Book.html"><img id="slideshow" alt=""></a>
+			  	</p>
+	  		</div>
+		</div>
+		<div class="clearIt"></div>
+	</div>
+	<div id="footer">&copy;Vu Pham</div>
+</div>
+<script type="text/javascript">
+	var i = 0;
+	function change_image(){
+		document.getElementById("slideshow").src="../images/" +i+ ".png";
+		i++;
+		if (i==6) {
+			i = 0;
+		}
+	}
+	function slider(){
+		setInterval(change_image, 500);
+	}
+</script>
+</body>
+</html>
