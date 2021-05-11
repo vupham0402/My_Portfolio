@@ -12,5 +12,5 @@
   - Doing checkout for customers
   - Calculating the total price
 
-## Website Demo:
+## Website demo:
 https://vupham0402.github.io/Web-Portfolio/Sneakers_Shopping/html/homePage.html
