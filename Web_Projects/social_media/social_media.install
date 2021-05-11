@@ -1,0 +1,39 @@
+<?php
+
+function social_media_schema() {
+
+ $schema['social_media'] = array(
+    'description' => 'The table for for storing social media link.',
+    'fields' => array(
+      'id' => array(
+        'description' => 'The id of each url link.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE
+        ),
+      'name' => array(
+        'description' => 'The social media name',
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+        'default' => ''
+        ),
+      'url' => array(
+        'description' => 'The url link.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => ''
+        ),
+    ),
+
+    'unique keys' => array(
+    'name' => array('name'),
+    'url'  => array('url')
+    ),
+
+    'primary key' => array('id'),
+
+    );
+    return $schema;
+}
