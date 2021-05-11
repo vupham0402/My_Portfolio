@@ -8,4 +8,4 @@
   - Calculating the total cost to show users
 
 ## Website Demo
-  - https://vupham0402.github.io/My_Portfolio/London_Tour/html/London.html
+  - https://vupham0402.github.io/My_Portfolio/Web_Projects/London_Tour/html/London.html
