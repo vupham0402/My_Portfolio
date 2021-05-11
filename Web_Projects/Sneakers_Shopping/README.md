@@ -13,4 +13,4 @@
   - Calculating the total price
 
 ## Website demo:
-https://vupham0402.github.io/My_Portfolio/Sneakers_Shopping/html/homePage.html
+https://vupham0402.github.io/My_Portfolio/Web_Projects/Sneakers_Shopping/html/homePage.html
