@@ -1,14 +1,14 @@
 # Social Media Module For Drupal Website
 
 ## What user do:
-    - Users can add/edit/delete the link for the social media they want
+   - Users can add/edit/delete the link for the social media they want
 
 ## What module do:
-    - Create the list of social media icons based on the user's request and show it on drupal website
-    - Saved all social media links in database
+   - Create the list of social media icons based on the user's request and show it on drupal website
+   - Saved all social media links in database
 
 ## Preparing for module:
-    - social_media.info: to store data about themes and information of module and control module operation
+   - social_media.info: to store data about themes and information of module and control module operation
         + name = Social Media Section
         + description = Create a list of social media icons and show it on website
         + package = Social Media
@@ -18,7 +18,7 @@
         + file[] = social_media.module  
         + configure = admin/config/services/Social Media
     
-    - social_media.module: code to run the module 
+   - social_media.module: code to run the module 
         + function social_media_menu(): Configuration for Social Media module
         + function social_media_form(): Create the form for user can input
         + function social_media_block_info(): Create a block for module
@@ -26,16 +26,16 @@
         + function social_media_get_value(): Create the HTML code (<a> tag) using the value get from client input form
         + function social_media_block_view(): Show the list of social media based on user input form
     
-    - social_media.install: store the url links of client by database table
+   - social_media.install: store the url links of client by database table
         + id column: id for social media link
         + url column: link of social media
 
 ## Acceptance criteria:
-    - Users:
+   - Users:
         + Users can access the socia media admin screen
         + Users can add/edit/delete the url of social media
         + Users can save configuration
-    - Module:
+   - Module:
         + Only accept well-form urls
         + Show all the icons of social media user requested
         + All the url links work well
@@ -43,17 +43,17 @@
         + Display all icons of social media horizontally with the width of screen < 1024 px
 
 ## Photo demo:
-    - https://www.flickr.com/photos/192965310@N06/51164017217/in/datetaken-public/
-    - https://www.flickr.com/photos/192965310@N06/51164017217/in/datetaken-public/
+   - https://www.flickr.com/photos/192965310@N06/51164017217/in/datetaken-public/
+   - https://www.flickr.com/photos/192965310@N06/51164017217/in/datetaken-public/
   
 ## Video demo:
-    - https://vimeo.com/546775198
+   - https://vimeo.com/546775198
 
 ## Website demo:
-    - https://www.cwu.edu/gearup/
-    - 
+   - https://www.cwu.edu/gearup/
+  
 ## Web projects:
-  - https://github.com/vupham0402/My_Portfolio/tree/master/Web_Projects
+   - https://github.com/vupham0402/My_Portfolio/tree/master/Web_Projects
  
 
 
