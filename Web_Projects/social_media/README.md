@@ -30,28 +30,30 @@
         + id column: id for social media link
         + url column: link of social media
 
-## Acceptance Criteria
-    - Users
+## Acceptance criteria:
+    - Users:
         + Users can access the socia media admin screen
         + Users can add/edit/delete the url of social media
         + Users can save configuration
-    - Module 
+    - Module:
         + Only accept well-form urls
         + Show all the icons of social media user requested
         + All the url links work well
         + Display all icons of social media vertically with the width of screen > 1024 px
         + Display all icons of social media horizontally with the width of screen < 1024 px
 
-## Photo Demo
+## Photo demo:
     - https://www.flickr.com/photos/192965310@N06/51164017217/in/datetaken-public/
     - https://www.flickr.com/photos/192965310@N06/51164017217/in/datetaken-public/
   
-## Video Demo
+## Video demo:
     - https://vimeo.com/546775198
 
-## Website Demo
+## Website demo:
     - https://www.cwu.edu/gearup/
-
+    - 
+## Web projects:
+  - https://github.com/vupham0402/My_Portfolio/tree/master/Web_Projects
  
 
 
