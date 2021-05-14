@@ -1,0 +1,6 @@
+name = Social Media
+description = Create a list of social media icons and show it on website
+package = Social Media
+core = 7.x
+file[] = social_media.module
+configure = admin/config/content/social_media
