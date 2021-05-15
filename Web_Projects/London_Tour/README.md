@@ -1,10 +1,10 @@
 # London Tour For Mobile Website
 
-## What user do:
+## What user can do:
   - Users can see the information about transportations, scenic places, and London tours
   - User can choose a London tour, tickets for adults and children, and optional services
 
-## What mobile web do:
+## What mobile web can do:
   - Calculating the total cost to show users
 
 ## Website demo:
