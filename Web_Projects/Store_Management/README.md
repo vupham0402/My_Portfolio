@@ -19,5 +19,5 @@
 ## Website demo:
   - https://vupham0402.github.io/My_Portfolio/Web_Projects/Store_Management/html/Mobile_Store.html
 
-## Web projects:
+## Source code:
   - https://vupham0402.github.io/My_Portfolio/Web_Projects/Store_Management/
