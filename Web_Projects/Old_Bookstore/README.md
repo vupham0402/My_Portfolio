@@ -15,4 +15,4 @@
   - https://vupham0402.github.io/My_Portfolio/Web_Projects/Old_Bookstore/html/Home.html
 
 ## Web projects:
-  - https://github.com/vupham0402/My_Portfolio/tree/master/Web_Projects
+  - https://vupham0402.github.io/My_Portfolio/Web_Projects/Old_Bookstore/
