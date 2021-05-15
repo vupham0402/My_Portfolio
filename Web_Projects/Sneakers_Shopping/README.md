@@ -15,5 +15,5 @@
 ## Website demo:
   - https://vupham0402.github.io/My_Portfolio/Web_Projects/Sneakers_Shopping/html/homePage.html
 
-## Web projects:
+## Source code:
   - https://vupham0402.github.io/My_Portfolio/Web_Projects/Sneakers_Shopping/
