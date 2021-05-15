@@ -53,7 +53,7 @@
    - https://www.cwu.edu/gearup/
   
 ## Web projects:
-   - https://github.com/vupham0402/My_Portfolio/tree/master/Web_Projects
+   - https://github.com/vupham0402/My_Portfolio/edit/master/Web_Projects/Social_Media/
  
 
 
