@@ -52,7 +52,7 @@
 ## Website demo:
    - https://www.cwu.edu/gearup/
   
-## Web projects:
+## Source code:
    - https://github.com/vupham0402/My_Portfolio/edit/master/Web_Projects/Social_Media/
  
 
