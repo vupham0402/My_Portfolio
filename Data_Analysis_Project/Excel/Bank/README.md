@@ -15,4 +15,4 @@
                                                                y = 1.785x - 0.249y + 3.598z - 40993.818 
                                                                                x: Income
                                                                                y: Home Value
-                                                                               z: Average Bank Balance
+                                                                               z: Average Bank Balanc
