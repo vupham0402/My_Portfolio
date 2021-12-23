@@ -1,0 +1,152 @@
+[01-Dec-2021 15:42:44 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:42:44 UTC] PHP Fatal error:  require(): Failed opening required '../catalog/model/database.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:43:53 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:43:53 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:43:53 UTC] PHP Fatal error:  require(): Failed opening required '../catalog/model/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:43:54 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:43:54 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:43:54 UTC] PHP Fatal error:  require(): Failed opening required '../catalog/model/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:43:54 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:43:54 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:43:54 UTC] PHP Fatal error:  require(): Failed opening required '../catalog/model/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:45:21 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:45:21 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:45:21 UTC] PHP Fatal error:  require(): Failed opening required '../catalog/model/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:45:22 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:45:22 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:45:22 UTC] PHP Fatal error:  require(): Failed opening required '../catalog/model/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:45:22 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:45:22 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:45:22 UTC] PHP Fatal error:  require(): Failed opening required '../catalog/model/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:45:23 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:45:23 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:45:23 UTC] PHP Fatal error:  require(): Failed opening required '../catalog/model/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:45:23 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:45:23 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:45:23 UTC] PHP Fatal error:  require(): Failed opening required '../catalog/model/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:45:28 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:45:28 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:45:28 UTC] PHP Fatal error:  require(): Failed opening required '../catalog/model/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:46:20 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:46:20 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:46:20 UTC] PHP Fatal error:  require(): Failed opening required '../catalog/model/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:46:21 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:46:21 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:46:21 UTC] PHP Fatal error:  require(): Failed opening required '../catalog/model/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:46:21 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:46:21 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:46:21 UTC] PHP Fatal error:  require(): Failed opening required '../catalog/model/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:47:18 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:47:18 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:47:18 UTC] PHP Fatal error:  require(): Failed opening required '../catalog/model/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:48:37 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:48:37 UTC] PHP Warning:  require(../catalog/model/database.php): failed to open stream: No such file or directory in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 15:48:37 UTC] PHP Fatal error:  require(): Failed opening required '../catalog/model/database.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/eyeprogpo/public_html/function.php on line 2
+[01-Dec-2021 16:17:25 UTC] PHP Notice:  Undefined index: totalSavings in /home/eyeprogpo/public_html/catalog/view/header.php on line 21
+[01-Dec-2021 16:17:25 UTC] PHP Notice:  Undefined variable: vendors in /home/eyeprogpo/public_html/catalog/index.php on line 17
+[01-Dec-2021 16:17:25 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 17
+[01-Dec-2021 16:17:25 UTC] PHP Notice:  Undefined variable: products in /home/eyeprogpo/public_html/catalog/index.php on line 45
+[01-Dec-2021 16:17:25 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 45
+[01-Dec-2021 16:46:49 UTC] PHP Notice:  Undefined index: totalSavings in /home/eyeprogpo/public_html/catalog/view/header.php on line 21
+[01-Dec-2021 16:46:49 UTC] PHP Notice:  Undefined variable: vendors in /home/eyeprogpo/public_html/catalog/index.php on line 17
+[01-Dec-2021 16:46:49 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 17
+[01-Dec-2021 16:46:49 UTC] PHP Notice:  Undefined variable: products in /home/eyeprogpo/public_html/catalog/index.php on line 45
+[01-Dec-2021 16:46:49 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 45
+[02-Dec-2021 20:21:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function setAttribute() on null in /home/eyeprogpo/public_html/catalog/model/database.php:8
+Stack trace:
+#0 /home/eyeprogpo/public_html/catalog/function.php(2): require()
+#1 /home/eyeprogpo/public_html/catalog/index.php(2): include('/home/eyeprogpo...')
+#2 {main}
+  thrown in /home/eyeprogpo/public_html/catalog/model/database.php on line 8
+[02-Dec-2021 20:22:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1049 Unknown database 'product' in /home/eyeprogpo/public_html/catalog/model/product_db.php:34
+Stack trace:
+#0 /home/eyeprogpo/public_html/catalog/model/product_db.php(34): PDOStatement->execute()
+#1 /home/eyeprogpo/public_html/catalog/function.php(21): get_all_products()
+#2 /home/eyeprogpo/public_html/catalog/index.php(2): include('/home/eyeprogpo...')
+#3 {main}
+  thrown in /home/eyeprogpo/public_html/catalog/model/product_db.php on line 34
+[07-Dec-2021 15:11:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 14
+[07-Dec-2021 15:11:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 45
+[07-Dec-2021 16:31:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 14
+[08-Dec-2021 19:16:57 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[08-Dec-2021 19:16:57 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[08-Dec-2021 19:17:21 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[08-Dec-2021 19:17:21 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[08-Dec-2021 19:19:28 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[08-Dec-2021 19:19:28 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[08-Dec-2021 19:21:17 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[08-Dec-2021 19:21:17 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[08-Dec-2021 19:21:52 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[08-Dec-2021 19:21:52 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[08-Dec-2021 19:21:53 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[08-Dec-2021 19:21:53 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[08-Dec-2021 19:23:17 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[08-Dec-2021 19:23:17 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[08-Dec-2021 19:23:35 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[08-Dec-2021 19:23:35 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[08-Dec-2021 19:24:30 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[08-Dec-2021 19:24:30 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[08-Dec-2021 19:25:38 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[08-Dec-2021 19:25:38 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[08-Dec-2021 19:46:38 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[08-Dec-2021 19:46:38 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[08-Dec-2021 19:47:14 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[08-Dec-2021 19:47:14 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[08-Dec-2021 19:47:52 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[08-Dec-2021 19:47:52 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[08-Dec-2021 19:48:03 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[08-Dec-2021 19:48:03 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[08-Dec-2021 19:50:22 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[08-Dec-2021 19:50:22 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[08-Dec-2021 19:50:25 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[08-Dec-2021 19:50:25 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[09-Dec-2021 18:49:11 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 16
+[09-Dec-2021 18:49:11 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 47
+[09-Dec-2021 18:49:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 16
+[09-Dec-2021 18:49:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 47
+[09-Dec-2021 19:08:22 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/login.php on line 19
+[09-Dec-2021 19:08:22 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/login.php on line 20
+[09-Dec-2021 19:09:42 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/login.php on line 3
+[09-Dec-2021 19:09:42 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/login.php on line 4
+[09-Dec-2021 19:10:54 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when session is active in /home/eyeprogpo/public_html/catalog/index.php on line 5
+[09-Dec-2021 19:13:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 20
+[09-Dec-2021 19:13:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 51
+[09-Dec-2021 19:13:43 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 20
+[09-Dec-2021 19:13:43 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 51
+[09-Dec-2021 19:14:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 20
+[09-Dec-2021 19:14:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 51
+[09-Dec-2021 19:18:38 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when session is active in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[09-Dec-2021 19:19:08 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 23
+[09-Dec-2021 19:19:08 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 54
+[09-Dec-2021 19:20:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 23
+[09-Dec-2021 19:20:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 54
+[09-Dec-2021 19:22:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eyeprogpo/public_html/catalog/login.php:7) in /home/eyeprogpo/public_html/catalog/login.php on line 64
+[09-Dec-2021 19:25:29 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[09-Dec-2021 19:25:29 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[09-Dec-2021 19:25:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eyeprogpo/public_html/catalog/login.php:7) in /home/eyeprogpo/public_html/catalog/login.php on line 64
+[09-Dec-2021 19:26:24 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[09-Dec-2021 19:26:24 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[09-Dec-2021 19:27:34 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[09-Dec-2021 19:27:34 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[09-Dec-2021 19:27:57 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[09-Dec-2021 19:27:57 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[09-Dec-2021 19:29:01 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 19
+[09-Dec-2021 19:29:01 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 50
+[09-Dec-2021 19:29:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 19
+[09-Dec-2021 19:29:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 50
+[09-Dec-2021 19:29:26 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[09-Dec-2021 19:29:26 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[09-Dec-2021 19:29:37 UTC] PHP Warning:  session_set_cookie_params(): Cannot change session cookie parameters when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 6
+[09-Dec-2021 19:29:37 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/eyeprogpo/public_html/catalog/function.php on line 7
+[09-Dec-2021 19:30:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 23
+[09-Dec-2021 19:30:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 54
+[09-Dec-2021 19:33:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 23
+[09-Dec-2021 19:33:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 54
+[09-Dec-2021 19:35:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 23
+[09-Dec-2021 19:35:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/index.php on line 54
+[23-Dec-2021 17:07:09 UTC] PHP Fatal error:  Cannot redeclare get_all_subtotal() (previously declared in /home/eyeprogpo/public_html/catalog/model/product_db.php:117) in /home/eyeprogpo/public_html/catalog/model/product_db.php on line 137
+[23-Dec-2021 17:07:40 UTC] PHP Fatal error:  Cannot redeclare get_all_subtotal() (previously declared in /home/eyeprogpo/public_html/catalog/model/product_db.php:117) in /home/eyeprogpo/public_html/catalog/model/product_db.php on line 137
+[23-Dec-2021 17:08:48 UTC] PHP Fatal error:  Cannot redeclare get_all_subtotal() (previously declared in /home/eyeprogpo/public_html/catalog/model/product_db.php:117) in /home/eyeprogpo/public_html/catalog/model/product_db.php on line 137
+[23-Dec-2021 17:09:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/view/header.php on line 45
+[23-Dec-2021 17:10:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/view/header.php on line 45
+[23-Dec-2021 17:10:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/eyeprogpo/public_html/catalog/view/header.php on line 45
