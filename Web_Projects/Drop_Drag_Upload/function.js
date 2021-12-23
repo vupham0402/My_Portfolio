@@ -5,7 +5,7 @@
 
  var bucketName = "epgmarketbasket";
  var bucketRegion = "us-east-1";
- var IdentityPoolId = "us-east-1:e027ee37-bd44-4e83-babf-0a16e56f2e22";
+ var IdentityPoolId = "IdentityPoolId";
 
  AWS.config.update({
                 region: bucketRegion,
