@@ -103,8 +103,8 @@
           }
 
           $data = sprintf("grant_type=%s&username=%s&password=%s&scope=%s", 'password', urlencode($login), urlencode($password), urlencode($this->tokenScope));
-          $clientId = 'fby3bq0bxg';
-          $clientSecret = '7kk12cotrzkbjertpzkdz47hcy71er';
+          $clientId = 'asdfghjklp';
+          $clientSecret = '123123213123123';
           $authorizationHeader = "Authorization: Basic " . base64_encode( $clientId . ":" . $clientSecret);
 
           return $this->getAuthToken($data, $authorizationHeader);
