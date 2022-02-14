@@ -24,10 +24,10 @@
     
     // SQL server connection information
     $sql_details = array(
-        'user' => 'eyepro',
-        'pass' => 'egj9c!TSjU22!',
+        'user' => 'root',
+        'pass' => '123',
         'db'   => 'eyepro_db',
-        'host' => '216.220.80.66;port=3563'
+        'host' => 'localhost;port=3306'
     );
     // Include SQL query processing class 
     require 'ssp.php'; 
