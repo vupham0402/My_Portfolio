@@ -7,8 +7,14 @@ $(document).ready( function (){
         "columnDefs": [{
             "targets": 11,
             "mRender": function(data, type, full) {
-                return '<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal_1">Select</button>';
-            }
+                return '<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal_1" id="selectButton">Calculate</button>';
+            }},
+            {
+                "targets": 10, 
+                "render": function ( data, type, row ) {
+                    if (sessionStorage.getItem("selected") === 'JOHNSON & JOHNSON') {return data = 'N/A';}
+                    else return data;
+                }
         }],
         "language": {
             processing: '<i class="fa fa-spinner fa-spin fa-3x fa-fw"></i><span class="sr-only">Loading...</span> '},
@@ -38,12 +44,12 @@ $(document).ready( function (){
              }
          }
     }
-     $('#mainCategory').on('change', function(){
+    $('#mainCategory').on('change', function(){
          table.column(3).search(this.value).draw();   
      });
     $('#vendors').on('change', function(){
-       document.getElementById('formVendor').submit();
-       sessionStorage.setItem('selected', $('#vendors').first().val());
+        document.getElementById('formVendor').submit();
+        sessionStorage.setItem('selected', $('#vendors').first().val());
     });
     $('#myTable tbody').on( 'click', 'tr', function () {
         if ( $(this).hasClass('selected') ) {
@@ -68,7 +74,13 @@ $(document).ready( function (){
             unit = unit.toFixed(2);
             document.getElementById('unit').value = unit;
         }
+        if (sessionStorage.getItem("selected") === 'JOHNSON & JOHNSON') {
+            $("#tier4").prop('disabled', true);
+        }
+        else {$("#tier4").prop('disabled', false);}
     });
+    $("#selectButton").css("padding", "");
+
 });
 function Unit() {
     var data = $('#myTable').DataTable().row('.selected').data();
@@ -99,6 +111,7 @@ function Calc1() {
         percent = (difference/facility)*100;
         document.getElementById('difference').value = difference.toFixed(2);
         document.getElementById('percent').value = percent.toFixed(2);
+        $('#usage').prop('disabled', false);
         $('#usage').focus();
     }
 }
@@ -114,56 +127,70 @@ function Calc2() {
             savings = usage * difference;
             document.getElementById('savings').value = savings.toFixed(2);
         // }
+        if (document.getElementById('savings').value > 0) {
+            document.getElementById('savings').style.color = 'green';
+        }
+        else if (document.getElementById('savings').value < 0) {
+            document.getElementById('savings').style.color = 'red';
+        }
     }
 }
 function Submit() {
-    var pro = document.getElementById('myModalTable');
-    let dollarUS = Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD",
-        useGrouping: true,
-    });
-    var totalSavings = [{vendor: document.getElementById('vendor').value, sku: document.getElementById('sku').value, savings: document.getElementById('savings').value}];
-    if(sessionStorage.getItem('totalSavings') !== null) {
-        var retrievedTotal = JSON.parse(sessionStorage.getItem('totalSavings'));
-        for (var m = 0; m < retrievedTotal.length; m++) {
-            if (totalSavings[0].vendor === retrievedTotal[m].vendor) {
-                if (totalSavings[0].sku === retrievedTotal[m].sku) {
-                    retrievedTotal[m].savings = totalSavings[0].savings;
-                    break;
+    if (document.getElementById('facility').value === '') {
+        alert ('Please input Facility Pricing!');
+    }
+    else if (document.getElementById('usage').value === '') {
+        alert ('Please input Annual Usage!');
+    }
+    else {
+        var pro = document.getElementById('myModalTable');
+        let dollarUS = Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "USD",
+            useGrouping: true,
+        });
+        var totalSavings = [{vendor: document.getElementById('vendor').value, sku: document.getElementById('sku').value, savings: document.getElementById('savings').value}];
+        if(sessionStorage.getItem('totalSavings') !== null) {
+            var retrievedTotal = JSON.parse(sessionStorage.getItem('totalSavings'));
+            for (var m = 0; m < retrievedTotal.length; m++) {
+                if (totalSavings[0].vendor === retrievedTotal[m].vendor) {
+                    if (totalSavings[0].sku === retrievedTotal[m].sku) {
+                        retrievedTotal[m].savings = totalSavings[0].savings;
+                        break;
+                    }
+                    else {
+                        retrievedTotal.push(totalSavings[0]);
+                        break;
+                    }
                 }
                 else {
                     retrievedTotal.push(totalSavings[0]);
                     break;
                 }
             }
-            else {
-                retrievedTotal.push(totalSavings[0]);
-                break;
-            }
+            sessionStorage.setItem('totalSavings', JSON.stringify(retrievedTotal));
         }
-        sessionStorage.setItem('totalSavings', JSON.stringify(retrievedTotal));
+        else {
+            sessionStorage.setItem('totalSavings', JSON.stringify(totalSavings));
+        }
+        var totals = JSON.parse(sessionStorage.getItem('totalSavings'));
+        var totalsavings = 0;
+        pro.innerHTML = "<tr>"
+                          + "<th>Vendor</th>"
+                          + "<th>SKU</th>"
+                          + "<th>Savings</th>"
+                          + "</tr>";
+        for (var n = 0; n < totals.length; n++) {
+            totalsavings = totalsavings + Number(totals[n].savings);
+            pro.innerHTML += "<tr>" + "<td>" + totals[n].vendor + "</td>" + "<td>" + totals[n].sku + "</td>" + "<td>" + totals[n].savings + "</td>" + "</tr>";
+        }
+        totalsavings = dollarUS.format(totalsavings);
+        document.getElementById('totalSavings').innerHTML = 'Total Savings: ' + totalsavings;
+        document.getElementById('myModalTable').innerHTML = pro.innerHTML;
+        sessionStorage.setItem('modal', pro.innerHTML);
+        sessionStorage.setItem('totalsavings', totalsavings);
+        document.getElementById('close').click();    
     }
-    else {
-        sessionStorage.setItem('totalSavings', JSON.stringify(totalSavings));
-    }
-    var totals = JSON.parse(sessionStorage.getItem('totalSavings'));
-    var totalsavings = 0;
-    pro.innerHTML = "<tr>"
-                      + "<th>Vendor</th>"
-                      + "<th>SKU</th>"
-                      + "<th>Savings</th>"
-                      + "</tr>";
-    for (var n = 0; n < totals.length; n++) {
-        totalsavings = totalsavings + Number(totals[n].savings);
-        pro.innerHTML += "<tr>" + "<td>" + totals[n].vendor + "</td>" + "<td>" + totals[n].sku + "</td>" + "<td>" + totals[n].savings + "</td>" + "</tr>";
-    }
-    totalsavings = dollarUS.format(totalsavings);
-    document.getElementById('totalSavings').innerHTML = 'Total Savings: ' + totalsavings;
-    document.getElementById('myModalTable').innerHTML = pro.innerHTML;
-    sessionStorage.setItem('modal', pro.innerHTML);
-    sessionStorage.setItem('totalsavings', totalsavings);
-    document.getElementById('close').click();
 }
 function Clear() {
     sessionStorage.removeItem('modal');
