@@ -1,9 +1,9 @@
 <?php 
 
     // mysql db table to use 
-    $table = 'catalog_view'; 
+    $table = ''; 
     // Table's primary key 
-    $primaryKey = 'product_id'; 
+    $primaryKey = 'id'; 
     // Array of database columns which should be read and sent back to DataTables. 
     // The `db` parameter represents the column name in the database.  
     // The `dt` parameter represents the DataTables column identifier. 
@@ -24,10 +24,10 @@
     
     // SQL server connection information
     $sql_details = array(
-        'user' => 'root',
-        'pass' => '123',
-        'db'   => 'eyepro_db',
-        'host' => 'localhost;port=3306'
+        'user' => '',
+        'pass' => '',
+        'db'   => '',
+        'host' => 'localhost;port='
     );
     // Include SQL query processing class 
     require 'ssp.php'; 
