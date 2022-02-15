@@ -193,4 +193,9 @@ table.dataTable {
 .group {
     margin-top: 10px;
 }
-
+#selectButton {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 12px;
+    margin-top: -5px;
+}
