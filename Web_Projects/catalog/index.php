@@ -41,6 +41,7 @@ include 'function.php';
             <img id="img">
         </nav>
     </div>
+    <p id="text" style="font-size: 18px; padding-left: 700px; visibility: hidden;">Local area agreement pricing applies.</p>
     <section style="width: 90%;">
         <br>
         <div id="selection"></div>
@@ -66,7 +67,7 @@ include 'function.php';
     </section>
     <div class="modal fade" id="myModal_1" role="dialog" style="text-align: center;">
       <div class="modal-dialog modal-sm">
-        <div class="modal-content" style="background-color: gainsboro;">
+        <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h3 class="modal-title" style="text-align: center; text-decoration: underline;">Savings Calculator</h3>
@@ -92,7 +93,7 @@ include 'function.php';
                                 <option value="tier1">Tier 1</option>
                                 <option value="tier2">Tier 2</option>
                                 <option value="tier3">Tier 3</option>
-                                <option value="tier4">Tier 4</option>
+                                <option value="tier4" id='tier4'>Tier 4</option>
                             </select>
                             <input type="number" disabled id="tierPrice" style="width: 50%;" class="textBox"><br>
                         </div>
@@ -106,6 +107,10 @@ include 'function.php';
                             <input class="textBox" onkeydown="Calc1();" type="number" step="0.01" required id="facility">
                         </div>
                         <div class="group">
+                            <label>Annual Usage</label>
+                            <input class="textBox" disabled onkeydown="Calc2();" type="number" step="0.01" required id="usage"> 
+                        </div>
+                        <div class="group">
                             <label>Difference</label>
                             <input type="number" disabled id="difference" class="textBox">   
                         </div>
@@ -114,12 +119,8 @@ include 'function.php';
                             <input type="number" disabled id="percent" class="textBox">  
                         </div>
                         <div class="group">
-                            <label>Annual Usage</label>
-                            <input class="textBox" onkeydown="Calc2();" type="number" step="0.01" required id="usage"> 
-                        </div>
-                        <div class="group">
                             <label>Total Savings</label>
-                            <input type="number" disabled id="savings" class="textBox">
+                            <input type="number" disabled id="savings" class="textBox" style="font-weight: 600;">
                         </div>
                     </div>        
                 </form>
@@ -132,5 +133,9 @@ include 'function.php';
       </div>
     </div>
 </main>
-
+<?php 
+    if($_POST['vendor'] === 'GLAUKOS') {
+        echo "<script>document.getElementById('text').style.visibility = 'visible';</script>";
+    }
+?>
 <?php include 'view/footer.php'; ?>
