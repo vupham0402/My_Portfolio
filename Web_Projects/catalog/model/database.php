@@ -1,7 +1,7 @@
 <?php
-    $dsn = 'mysql:host=localhost;port=3306;dbname=eyepro_db';
-    $username = 'root';
-    $password = '123';
+    $dsn = 'mysql:host=;port=;dbname=';
+    $username = '';
+    $password = '';
 
     try {
         $db = new PDO($dsn, $username, $password);
