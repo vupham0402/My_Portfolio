@@ -2,7 +2,7 @@
 function get_all_vendors() {
     global $db;
     $query = 'SELECT vendor
-              FROM eyepro_db.vendors_view
+              FROM db.vendors_view
               ORDER BY vendor ASC;';
     $statement = $db->prepare($query);
     $statement->execute();
@@ -13,7 +13,7 @@ function get_all_vendors() {
 
 function get_img() {
     global $db;
-    $query = 'SELECT * FROM eyepro_db.vendors_view';
+    $query = 'SELECT * FROM db.vendors_view';
     $statement = $db->prepare($query);
     $statement->execute();
     $images = $statement->fetchAll();
@@ -23,7 +23,7 @@ function get_img() {
 
 function get_all_categories_by_vendor($vendor) {
     global $db;
-    $query = 'SELECT * FROM eyepro_db.categories_view 
+    $query = 'SELECT * FROM db.categories_view 
               WHERE vendor = :vendor';
     $statement = $db->prepare($query);
     $statement->bindValue(':vendor', $vendor);
@@ -35,7 +35,7 @@ function get_all_categories_by_vendor($vendor) {
 
 function get_all_categories() {
     global $db;
-    $query = 'SELECT DISTINCT(category) FROM eyepro_db.categories_view';
+    $query = 'SELECT DISTINCT(category) FROM db.categories_view';
     $statement = $db->prepare($query);
     $statement->execute();
     $category = $statement->fetchAll();
