@@ -1,0 +1,192 @@
+{
+  "issuer": "https://eyeprogpo.wildapricot.org",
+  "authorization_endpoint": "https://eyeprogpo.wildapricot.org/sys/login/OAuthLogin",
+  "token_endpoint": "https://oauth.wildapricot.org/auth/token",
+  "userinfo_endpoint": "https://api.wildapricot.org/v2.1/accounts/388757/contacts/me",
+  "paths" : {
+    "/" : {
+      "get" : {
+        "summary" : "Base URL for this API.",
+        "description" : "Base URL for this API. It provides a list of resources,\nwhich can be directly accessed by URL without providing any additional\ninformation like account ID etc.\n",
+        "responses" : {
+          "200" : {
+            "description" : "Array of resources",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Resource"
+              }
+            }
+          },
+          "401" : {
+            "$ref" : "#/responses/unauthorized"
+          }
+        }
+      }
+    },
+    "/accounts" : {
+      "get" : {
+        "summary" : "List of available accounts",
+        "description" : "List of accounts available with current oAuth token. Typically, there would be only one record in an array.\n",
+        "tags" : [ "Accounts" ],
+        "responses" : {
+          "200" : {
+            "description" : "Array of accounts",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Account"
+              }
+            }
+          },
+          "401" : {
+            "$ref" : "#/responses/unauthorized"
+          },
+          "429" : {
+            "$ref" : "#/responses/tooManyRequests"
+          }
+        }
+      }
+    },
+    "/accounts/{accountId}" : {
+      "get" : {
+        "summary" : "Details for specific account",
+        "description" : "Details for specific account\n",
+        "parameters" : [ {
+          "$ref" : "#/parameters/accountId"
+        } ],
+        "tags" : [ "Accounts" ],
+        "responses" : {
+          "200" : {
+            "description" : "Array of accounts",
+            "schema" : {
+              "$ref" : "#/definitions/Account"
+            }
+          },
+          "401" : {
+            "$ref" : "#/responses/unauthorized"
+          },
+          "429" : {
+            "$ref" : "#/responses/tooManyRequests"
+          }
+        }
+      }
+    },
+    "/accounts/{accountId}/contacts" : {
+      "get" : {
+        "summary" : "Contacts list",
+        "description" : "\nRetrieves or updates contact information. Results can be filtered using filter criteria consisting of fields, operators, and values.\nLarge lists can be retrieved with in sets or pages using $top and $skip parameters.\n",
+        "parameters" : [ {
+          "name" : "accountId",
+          "in" : "path",
+          "description" : "Current account identifier",
+          "required" : true,
+          "type" : "number",
+          "format" : "integer"
+        }, {
+          "name" : "simpleQuery",
+          "type" : "string",
+          "in" : "query",
+          "description" : "A search string used to filter contacts list.",
+          "required" : false
+        }, {
+          "name" : "$filter",
+          "in" : "query",
+          "type" : "string",
+          "description" : "An expression to filter contacts. Possible field names to filter contacts are\n**Id** - A list of contact IDs. Supports operation **in**. E.g. `$filter=Id in [1,3,5,7,9]`\n",
+          "required" : false
+        }, {
+          "name" : "$select",
+          "in" : "query",
+          "description" : "Fields to be returned for each contact. If not specified, no custom fields will be returned.\nThe field names correspond to the fields returned by the [ContactFields API call](#/Contacts/get_accounts__accountId__contactfields), not the field names that appear in Wild Apricot. Multiple field names are separated by commas, and field names with spaces or special characters are enclosed in single quotation marks.\nExample `$select='First name','Last name','My favorite book'`\n",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "$skip",
+          "in" : "query",
+          "description" : "This parameter specifies the number of records to be skipped. For example, if the result set contains 200 records and $skip=50, then the call will return records 51 to 200.\n\nUsually used together with **$top** parameter.\n",
+          "required" : false,
+          "type" : "integer"
+        }, {
+          "name" : "$top",
+          "in" : "query",
+          "description" : "Specifies the maximum number of records to be returned. For example, if the result set contains 200 records and $top=50, then the call will return records from 1 to 50.\n\nUsually this parameter used together with $skip parameter.\n",
+          "required" : false,
+          "type" : "integer"
+        }, {
+          "name" : "$count",
+          "in" : "query",
+          "description" : "Append this parameter to a search request to retrieve the number of contacts returned by the search.\n",
+          "required" : false,
+          "type" : "boolean"
+        }, {
+          "name" : "ids",
+          "in" : "query",
+          "description" : "Retrieve specific contacts.\n\nE.g. `ids=1,2,3`\n",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "idsOnly",
+          "in" : "query",
+          "description" : "If specified, the call returns a list of contact IDs for the filtered contacts. In this case, the response will contain only the ContactIdentifiers field.\n",
+          "required" : false,
+          "type" : "boolean"
+        } ],
+        "tags" : [ "Contacts" ],
+        "responses" : {
+          "200" : {
+            "description" : "A wrapper object, which contains a list of contacts, or the number of contacts, or a list of contact IDs.\n",
+            "schema" : {
+              "$ref" : "#/definitions/ContactsResponse"
+            }
+          },
+          "400" : {
+            "$ref" : "#/responses/badRequest"
+          },
+          "401" : {
+            "$ref" : "#/responses/unauthorized"
+          },
+          "428" : {
+            "$ref" : "#/responses/termsOfUseRequired"
+          },
+          "429" : {
+            "$ref" : "#/responses/tooManyRequests"
+          }
+        }
+      }
+    },
+    "/accounts/{accountId}/contacts/me" : {
+      "get" : {
+        "summary" : "Retrieve information about the current user",
+        "description" : "Retrieve information about the current user. FieldValues would not be returned in a result.\n",
+        "parameters" : [ {
+          "$ref" : "#/parameters/accountId"
+        }, {
+          "name" : "includeDetails",
+          "in" : "query",
+          "description" : "Append this parameter to a search request to retrieve additional information for current user, including FieldValues.\n",
+          "required" : false,
+          "type" : "boolean"
+        } ],
+        "tags" : [ "Contacts" ],
+        "responses" : {
+          "200" : {
+            "description" : "Brief information about the current user\n",
+            "schema" : {
+              "$ref" : "#/definitions/ContactMe"
+            }
+          },
+          "401" : {
+            "$ref" : "#/responses/unauthorized"
+          },
+          "428" : {
+            "$ref" : "#/responses/termsOfUseRequired"
+          },
+          "429" : {
+            "$ref" : "#/responses/tooManyRequests"
+          }
+        }
+      }
+    }
+  }
+}
