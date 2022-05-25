@@ -1,0 +1,86 @@
+[03-Feb-2022 19:14:46 UTC] PHP Warning:  Use of undefined constant CURLOPT_GET - assumed 'CURLOPT_GET' (this will throw an Error in a future version of PHP) in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 19:14:46 UTC] PHP Warning:  curl_setopt() expects parameter 2 to be int, string given in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:12:37 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:12:37 UTC] PHP Warning:  file_get_contents(http://10.50.4.3/trusted): failed to open stream: no suitable wrapper could be found in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:12:37 UTC] PHP Fatal error:  Uncaught Exception: Problem reading data from ,  in /home/eyeprogpo/public_html/visualization/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/eyeprogpo/public_html/visualization/index.php on line 17
+[03-Feb-2022 21:15:21 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:15:21 UTC] PHP Warning:  file_get_contents(http://10.50.4.3/trusted): failed to open stream: no suitable wrapper could be found in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:15:21 UTC] PHP Fatal error:  Uncaught Exception: Problem reading data from ,  in /home/eyeprogpo/public_html/visualization/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/eyeprogpo/public_html/visualization/index.php on line 17
+[03-Feb-2022 21:15:41 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:15:41 UTC] PHP Warning:  file_get_contents(http://10.50.4.3/trusted): failed to open stream: no suitable wrapper could be found in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:15:41 UTC] PHP Fatal error:  Uncaught Exception: Problem reading data from ,  in /home/eyeprogpo/public_html/visualization/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/eyeprogpo/public_html/visualization/index.php on line 17
+[03-Feb-2022 21:17:17 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:17:17 UTC] PHP Warning:  file_get_contents(http://10.50.4.3/trusted): failed to open stream: no suitable wrapper could be found in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:17:17 UTC] PHP Fatal error:  Uncaught Exception: Problem reading data from ,  in /home/eyeprogpo/public_html/visualization/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/eyeprogpo/public_html/visualization/index.php on line 17
+[03-Feb-2022 21:17:18 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:17:18 UTC] PHP Warning:  file_get_contents(http://10.50.4.3/trusted): failed to open stream: no suitable wrapper could be found in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:17:18 UTC] PHP Fatal error:  Uncaught Exception: Problem reading data from ,  in /home/eyeprogpo/public_html/visualization/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/eyeprogpo/public_html/visualization/index.php on line 17
+[03-Feb-2022 21:17:19 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:17:19 UTC] PHP Warning:  file_get_contents(http://10.50.4.3/trusted): failed to open stream: no suitable wrapper could be found in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:17:19 UTC] PHP Fatal error:  Uncaught Exception: Problem reading data from ,  in /home/eyeprogpo/public_html/visualization/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/eyeprogpo/public_html/visualization/index.php on line 17
+[03-Feb-2022 21:17:19 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:17:19 UTC] PHP Warning:  file_get_contents(http://10.50.4.3/trusted): failed to open stream: no suitable wrapper could be found in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:17:19 UTC] PHP Fatal error:  Uncaught Exception: Problem reading data from ,  in /home/eyeprogpo/public_html/visualization/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/eyeprogpo/public_html/visualization/index.php on line 17
+[03-Feb-2022 21:17:20 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:17:20 UTC] PHP Warning:  file_get_contents(http://10.50.4.3/trusted): failed to open stream: no suitable wrapper could be found in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:17:20 UTC] PHP Fatal error:  Uncaught Exception: Problem reading data from ,  in /home/eyeprogpo/public_html/visualization/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/eyeprogpo/public_html/visualization/index.php on line 17
+[03-Feb-2022 21:17:20 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:17:20 UTC] PHP Warning:  file_get_contents(http://10.50.4.3/trusted): failed to open stream: no suitable wrapper could be found in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:17:20 UTC] PHP Fatal error:  Uncaught Exception: Problem reading data from ,  in /home/eyeprogpo/public_html/visualization/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/eyeprogpo/public_html/visualization/index.php on line 17
+[03-Feb-2022 21:17:21 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:17:21 UTC] PHP Warning:  file_get_contents(http://10.50.4.3/trusted): failed to open stream: no suitable wrapper could be found in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:17:21 UTC] PHP Fatal error:  Uncaught Exception: Problem reading data from ,  in /home/eyeprogpo/public_html/visualization/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/eyeprogpo/public_html/visualization/index.php on line 17
+[03-Feb-2022 21:17:33 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:17:33 UTC] PHP Warning:  file_get_contents(http://10.50.4.3/trusted): failed to open stream: no suitable wrapper could be found in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:17:33 UTC] PHP Fatal error:  Uncaught Exception: Problem reading data from ,  in /home/eyeprogpo/public_html/visualization/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/eyeprogpo/public_html/visualization/index.php on line 17
+[03-Feb-2022 21:18:31 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:18:31 UTC] PHP Warning:  file_get_contents(http://10.50.4.3/trusted): failed to open stream: no suitable wrapper could be found in /home/eyeprogpo/public_html/visualization/index.php on line 13
+[03-Feb-2022 21:18:31 UTC] PHP Fatal error:  Uncaught Exception: Problem reading data from ,  in /home/eyeprogpo/public_html/visualization/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/eyeprogpo/public_html/visualization/index.php on line 17
+[03-Feb-2022 21:37:05 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/eyeprogpo/public_html/visualization/test.php on line 12
+[03-Feb-2022 21:37:05 UTC] PHP Warning:  file_get_contents(http://10.50.4.3/trusted): failed to open stream: no suitable wrapper could be found in /home/eyeprogpo/public_html/visualization/test.php on line 12
+[03-Feb-2022 21:37:05 UTC] PHP Fatal error:  Uncaught Exception: Problem reading data from ,  in /home/eyeprogpo/public_html/visualization/test.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/eyeprogpo/public_html/visualization/test.php on line 16
+[03-Feb-2022 21:39:08 UTC] PHP Warning:  file_get_contents(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/eyeprogpo/public_html/visualization/test.php on line 19
+[03-Feb-2022 21:39:08 UTC] PHP Warning:  file_get_contents(http://10.50.4.3/trusted): failed to open stream: no suitable wrapper could be found in /home/eyeprogpo/public_html/visualization/test.php on line 19
+[03-Feb-2022 21:39:08 UTC] PHP Fatal error:  Uncaught Exception: Problem reading data from ,  in /home/eyeprogpo/public_html/visualization/test.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/eyeprogpo/public_html/visualization/test.php on line 23
